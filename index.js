@@ -5,9 +5,10 @@ const https = require('https');
 const CSV_FILE_PATH = './orders.csv';
 
 // Shopify store credentials
-const SHOPIFY_STORE_HANDLE = process.env.SHOPIFY_STORE_HANDLE;
-const SHOPIFY_API_KEY = process.env.SHOPIFY_API_KEY;
-const SHOPIFY_API_PASSWORD = process.env.SHOPIFY_API_PASSWORD;
+const ENV = {...process.env};
+const SHOPIFY_STORE_HANDLE = ENV.SHOPIFY_STORE_HANDLE;
+const SHOPIFY_API_KEY = ENV.SHOPIFY_API_KEY;
+const SHOPIFY_API_PASSWORD = ENV.SHOPIFY_API_PASSWORD;
 const SHOPIFY_STORE_CREDENTIALS = `${SHOPIFY_API_KEY}:${SHOPIFY_API_PASSWORD}`;
 
 // Add custom note or tag to each imported order
