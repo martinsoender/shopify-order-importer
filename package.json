@@ -1,0 +1,14 @@
+{
+  "name": "shopify-order-importer",
+  "version": "1.0.0",
+  "description": "Import orders via CSV to any given Shopify store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Sondergaard <martin.sondergaard@outlook.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
